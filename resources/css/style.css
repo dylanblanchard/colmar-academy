@@ -3,11 +3,19 @@
 html {
   font-size: 18px;
   font-family: "Helvetica", sans-serif;
-  background-color: white;
+  background-color: antiquewhite;
 }
 
 body {
   line-height: 1.4;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h3 {
+  font-size: 1.5rem;
 }
 
 div {
@@ -18,76 +26,6 @@ div {
   max-width: 960px;
   margin: auto;
   display: flex;
-}
-
-.flex {
-  display: flex;
-}
-
-h1 {
-  font-size: 2rem;
-  line-height: 1.2;
-  font-weight: bold;
-}
-
-/* Header stylings */
-header {
-  height: 32px;
-  max-width: 100%;
-}
-
-nav {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-nav li {
-  display: inline;
-  margin-left: 16px;
-}
-
-nav li:last-child {
-  margin-right: 24px;
-}
-
-.truncated-menu {
-  display: none;
-}
-
-/* First section */
-.first .container{
-  background-color: lightgray;
-}
-
-.first .left-side {
-  width: 60%;
-}
-
-.first img {
-  max-width: 100%;
-/* why isn't auto working here */  
-  height: 400px;
-  }
-
-.first .right-side {
-  width: 40%;
-}
-
-.cta {
-  flex-direction: column;
-  align-items: center;
-}
-
-.cta h1,
-span {
-  color: darkslategray;
-}
-
-.cta .btn {
-  color: white;
-  background-color: darkmagenta;
-  padding: 8px 20px;
 }
 
 footer {
