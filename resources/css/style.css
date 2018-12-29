@@ -1,9 +1,25 @@
+/* Colours 
+Light grey: #CDD3D5 || rgb(205, 211, 203)
+Yellow: #F2DB98 || rgb(242, 219, 152)
+Light brown: #DBD3C9 || rgb(219, 211, 201)
+Greenish: #B4CEB3 || rgb(180, 206, 179)
+Light blue: #9CAFB7 || rgb(156, 175, 183)
+Darker brown: #717568 || rgb(113, 117, 104)
+
+Fonts
+font-family: 'Muli', sans-serif;
+font-family: 'Lato', sans-serif;
+font-family: 'Montserrat', sans-serif;
+*/
+
+
+
 /* Universal Stylings */
 
 html {
   font-size: 18px;
-  font-family: "Helvetica", sans-serif;
-  background-color: antiquewhite;
+  font-family: 'Muli', sans-serif;
+  background-color: white;
 }
 
 body {
@@ -12,14 +28,21 @@ body {
 
 h1 {
   font-size: 3rem;
+  font-weight: bold;
+  font-family: 'Montserrat', sans-serif;
+
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  font-family: 'Montserrat', sans-serif;
 }
 
 h3 {
   font-size: 1.5rem;
-}
-
-div {
-  border: 1px solid red;
+  font-weight: bold;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .container {
@@ -28,9 +51,474 @@ div {
   display: flex;
 }
 
+.content {
+  background-color: whitesmoke;
+}
+
+.main-hero {
+  width: 100%;
+}
+
+.little-container:hover {
+  background-color: rgb(156, 175, 183);
+}
+
+/* Header styles */
+
+#header {
+  background-color: rgb(245, 244, 234);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 4rem;
+  color: rgb(43, 64, 112);
+  border-bottom: 1px solid black;
+}
+
+.header span {
+  color: black;
+}
+
+.header a {
+  color: black;
+  text-decoration: none;
+}
+
+.header a:hover {
+  color: white;
+  background-color: rgb(189, 188, 178);
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  font-size: 2rem;
+  margin-left: 1.5rem;
+}
+
+.nav {
+  margin-right: 0.5rem;
+}
+
+.nav span {
+  margin: auto 1rem;
+}
+
+/* hidden for full section */
+.icons {
+  display: none;
+}
+
+.content .article-container .little-container .photo img:last-child {
+  display: none;
+}
+
+/* Body styles */
+
+/* Hero section */
+
+#banner {
+  background-image: url(../images/banner.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 700px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-banner {
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.5);
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+  width: 100%;
+  height: 50%;
+  margin: 0 auto;
+}
+
+.main-banner h1 {
+  color: rgb(228, 211, 109);
+}
+
+.main-banner p {
+  color: rgb(214, 228, 213);
+}
+
+.main-banner .text {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+  text-align: center;
+}
+
+.main-banner a {
+  color: white;
+  text-decoration: none;
+  background-color: rgb(239, 164, 139);
+  padding: 14px 25px;
+}
+
+.main-banner a:hover {
+  background-color: rgb(255, 219, 193);
+  color: rgb(181, 112, 89)
+}
+
+.main.image {
+  width: 100%;
+  margin: 2rem 1.5rem;
+}
+
+.image img {
+  width: 100%;
+}
+
+.button {
+  padding-top: 2rem;
+}
+
+.button span {
+  padding: 1.5rem 6rem;
+  width: 100%;
+  color: white;
+  font-size: 1.5rem;
+  text-align: center;
+  transition: all 400ms linear 0s;
+  border-radius: 3px;
+}
+
+.button,
+.text h1 {
+  margin: 2rem 0;
+}
+
+/* Content Sections */
+
+.words a {
+  color: rgb(43, 64, 112);
+}
+
+.words a:hover {
+  border-bottom: 2px dotted rgb(189, 139, 118);
+}
+
+.content {
+  display: flex;
+  max-width: 1500px;
+  margin: 0 auto;
+}
+
+.content-container {
+  width: 60%;
+  margin: 2rem 1.5rem;
+}
+
+.item.image {
+  width: 100%;
+}
+
+.item.text {
+  max-width: 90%;
+}
+
+.item.text h2 {
+  margin: 2rem 0;
+  font-size: 2rem;
+}
+
+.item.text p {
+  margin: 2rem 0;
+  font-size: 1rem;
+}
+
+.article-container {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  margin: 2rem 0;
+}
+
+.little-container {
+  display: flex;
+  align-items: center;
+  width: 90%;
+  margin: 0.33rem;
+  padding: 0.5rem;
+  transition: background-color 300ms linear 0s;
+}
+
+.little-container .photo {
+  width: 35%;
+}
+
+.little-container .words {
+  width: 65%;
+  margin: 0.5rem;
+}
+
+.little-container .photo img {
+  width: 100%;
+  height: auto;
+}
+
+.little-container .words h3,
+.little-container .words p,
+.little-container .words span {
+  margin: 0.5rem;
+  max-width: 100%;
+}
+
+.item.text span {
+  color: #00000080;
+}
+
+
+/* Stylings for courses */
+#courses {
+  max-width: 1500px;
+  margin: 0 auto;
+  border-top: 3px solid transparent;
+  border-bottom: 3px solid transparent;
+}
+
+#courses h1 {
+  text-align: center;
+  margin: 2rem auto;
+}
+
+.courses .courses-container:first-child {
+  margin-bottom: 0.5rem;
+}
+
+.courses-container {
+  display: flex;
+  margin: 2rem 4.5rem;
+}
+
+.little-container.course {
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+  padding: 0;
+  margin: 0 1rem;
+}
+
+.little-container.course .img,
+.little-container.course .img img,
+.little-container.course .font,
+.courses,
+#courses h1 {
+  width: 100%;
+}
+
+.little-container.course .font h3 {
+  padding: 1rem 0.5rem 0.5rem 1rem;
+
+}
+
+.little-container.course .font p {
+  padding: 0.5rem 0.5rem 0.5rem 1rem;
+}
+
+.little-container.course .font p:last-child {
+  padding-bottom: 1.5em;
+}
+
+.little-container.course .font p:nth-child(2) {
+  color: #00000080;
+}
+
+/* Thesis Section */
+#thesis h1 {
+  width: 100%;
+  text-align: center;
+  margin: 2rem auto;
+}
+
+.thesis {
+  display: flex;
+  align-items: flex-start;
+}
+
+.video-item {
+  width: 60%;
+  padding: 0 1.5rem 1.5rem 1.5rem;
+}
+
+.video-item video {
+  width: 100%;
+  height: auto;
+  object-fit: fill;
+}
+
+.thesis-content {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+}
+
+/* Footer */
 footer {
   border-top: 1px solid gray;
   justify-content: space-between;
   font-size: 0.75rem;
   color: dimgray;
+  height: 150px;
+  max-width: 1500px;
+  text-decoration: none;
+}
+
+@media only screen and (max-width: 880px) {
+  #banner {
+    height: 425px;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2,
+  h3 {
+    font-size: 1.5rem;
+  }
+
+  footer span:last-child {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+   
+  footer {
+    height: 50px;
+  }
+
+  footer a {
+    text-decoration: none;
+    color: dimgray;
+  }
+
+}
+
+@media only screen and (max-width: 840px) {
+  .icons .unique {
+    display: inline-block;
+  }
+
+  .nav,
+  .logo {
+    display: none;
+  }
+
+  .icons {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  footer {
+    height: 50px;
+  }
+
+  footer a {
+    text-decoration: none;
+    color: dimgray;
+  }
+  
+}
+
+@media only screen and (max-width: 650px) {
+
+  .content .article-container .little-container .photo img:first-child {
+    display: none;
+  }
+
+  .content .article-container .little-container .photo img:last-child {
+    display: inline-block;
+  }
+
+  .header .logo,
+  .courses-container .course .img,
+  .courses-container .little-container.course .font p,
+  .video-item div:last-child,
+  .footer .footer-content,
+  .content .content-container,
+  .content .article-container .little-container .photo img:first-child {
+    display: none;
+  }
+
+  .icons .unique {
+    display: inline-block;
+  }
+
+  .icons {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 25px;
+  }
+
+  .content .article-container {
+    width: 100%;
+    margin: 1rem 1rem 0 1rem;
+    align-items: center;
+  }
+
+  .content .article-container .little-container {
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    margin-bottom: 1rem;
+    border: none;
+  }
+
+  .content .article-container .little-container .words {
+    text-align: center;
+  }
+
+  .content .article-container .little-container .photo {
+    width: 100%;
+  }
+
+  .content .article-container .little-container .photo img:last-child {
+    display: inline-block;
+  }
+
+  #courses {
+    background-color: rgb(244, 197, 181);
+  }
+  
+  .courses-container {
+    max-width: 640px;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    margin: 0px;
+  }
+  
+  #courses h1 {
+    border-bottom: 5px solid grey;
+  }
+ 
+  .thesis-content {
+    display: none;
+  }
+  
+  #thesis .video-item {
+    width: 100%;
+    padding: 0;
+  }
+  
+  footer {
+    height: 40px;
+  }
+  
+  footer a {
+    text-decoration: none;
+    color: dimgray;
+  }
 }
