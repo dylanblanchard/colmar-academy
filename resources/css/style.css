@@ -392,7 +392,7 @@ footer {
     padding-left: 30px;
     padding-right: 30px;
   }
-   
+
   footer {
     height: 50px;
   }
@@ -428,7 +428,7 @@ footer {
     text-decoration: none;
     color: dimgray;
   }
-  
+
 }
 
 @media only screen and (max-width: 650px) {
@@ -491,7 +491,7 @@ footer {
   #courses {
     background-color: rgb(244, 197, 181);
   }
-  
+
   .courses-container {
     max-width: 640px;
     display: inline-block;
@@ -499,24 +499,24 @@ footer {
     text-align: center;
     margin: 0px;
   }
-  
+
   #courses h1 {
     border-bottom: 5px solid grey;
   }
- 
+
   .thesis-content {
     display: none;
   }
-  
+
   #thesis .video-item {
     width: 100%;
     padding: 0;
   }
-  
+
   footer {
     height: 40px;
   }
-  
+
   footer a {
     text-decoration: none;
     color: dimgray;
